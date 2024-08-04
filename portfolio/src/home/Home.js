@@ -234,6 +234,10 @@ const portfolio = [
 
 // Home component containing the main content of the homepage
 function Home() {
+    useEffect(() => {
+        console.log('Home component rendered');
+    }, []);
+
     const [modalShow, setModalShow] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
 
