@@ -567,6 +567,9 @@ hr {
 
     .background-container {
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-position: center;
         background-attachment: scroll;
         height: 100vh;
