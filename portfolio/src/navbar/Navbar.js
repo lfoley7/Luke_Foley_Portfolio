@@ -32,7 +32,7 @@ function Navbar() {
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=luke.c.foley@gmail.com" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                                <a className="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=lcfoley@wpi.edu" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                     <FontAwesomeIcon className="nav-icon" icon={faPaperPlane} />&nbsp;Email
                                 </a>
                             </li>
@@ -66,7 +66,7 @@ function Navbar() {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=luke.c.foley@gmail.com" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                            <a className="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=lcfoley@wpi.edu" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                 <FontAwesomeIcon className="nav-icon" icon={faPaperPlane} />&nbsp;Email
                             </a>
                         </li>

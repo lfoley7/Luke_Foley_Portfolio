@@ -454,7 +454,7 @@ function Home() {
                                 <FontAwesomeIcon icon={faGithub} size="2x" className="footer-icon" />
                             </a>
                             &nbsp;
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luke.c.foley@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lcfoley@wpi.edu" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faEnvelope} size="2x" className="footer-icon" />
                             </a>
                         </Col>
