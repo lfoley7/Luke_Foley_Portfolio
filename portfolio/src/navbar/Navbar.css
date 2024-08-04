@@ -113,7 +113,14 @@
 .navbar-nav .nav-icon {
     color: rgb(80, 65, 65);
     transition: color .5s ease, opacity .5s ease;
-    font-size: 1rem !important;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link,
+    .navbar-nav .nav-icon {
+        font-size: 1rem !important;
+    }
 }
 
 .navbar-nav .nav-link:hover,
