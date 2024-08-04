@@ -15,16 +15,14 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container-fluid">
-                    <button onClick={scrollToTop} className="navbar-brand" style={{ cursor: 'pointer', background: 'none', border: 'none', padding: 0, fontSize: 'inherit', color: 'inherit' }}>
-                        Luke Foley
-                    </button>
+                    <a onClick={scrollToTop} className="navbar-brand" style={{ cursor: 'pointer' }}>Luke Foley</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <FontAwesomeIcon icon={faBars} style={{ color: 'rgb(80, 65, 65)' }} />
                     </button>
                     <div className="collapse navbar-collapse d-none d-lg-block" id="navbarNavDropdown">
                         <ul className="navbar-nav me-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="https://www.linkedin.com/in/luke-foley" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                                <a className="nav-link" href="https://www.linkedin.com/in/luke-foley-9006ba205/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                     <FontAwesomeIcon className="nav-icon" icon={faLinkedin} />&nbsp;LinkedIn
                                 </a>
                             </li>
@@ -41,8 +39,8 @@ function Navbar() {
                         </ul>
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="/Foley%20Luke%20Resume.pdf" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-                                    <FontAwesomeIcon className="nav-icon" icon={faFile} />&nbsp;Download Resume
+                                <a className="nav-link" href={`${process.env.PUBLIC_URL}/Foley Luke Resume.pdf`} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                                    <FontAwesomeIcon icon={faFile} />&nbsp;Download Resume
                                 </a>
                             </li>
                         </ul>
@@ -58,7 +56,7 @@ function Navbar() {
                 <div className="offcanvas-body">
                     <ul className="navbar-nav me-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="https://www.linkedin.com/in/luke-foley" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                            <a className="nav-link" href="https://www.linkedin.com/in/luke-foley-9006ba205/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                 <FontAwesomeIcon className="nav-icon" icon={faLinkedin} />&nbsp;LinkedIn
                             </a>
                         </li>
@@ -75,8 +73,8 @@ function Navbar() {
                     </ul>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="/Foley%20Luke%20Resume.pdf" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-                                <FontAwesomeIcon className="nav-icon" icon={faFile} />&nbsp;Download Resume
+                            <a className="nav-link" href={`${process.env.PUBLIC_URL}/Foley Luke Resume.pdf`} target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                                <FontAwesomeIcon icon={faFile} />&nbsp;Download Resume
                             </a>
                         </li>
                     </ul>
