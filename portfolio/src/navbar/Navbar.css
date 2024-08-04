@@ -1,0 +1,153 @@
+:root {
+    --color-gray: rgb(240, 240, 240);
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 2rem;
+    text-align: center;
+    margin-top: -0.1rem;
+}
+
+.navigation-wrapper {
+    background: var(--color-gray);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: var(--color-gray);
+}
+
+.nav-bar--dropdown.login-signin {
+    padding-top: 0.3rem;
+    text-align: center;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #ff5757 !important;
+}
+
+.mtt-text {
+    position: relative;
+    top: 42%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-fluid {
+    margin: -1rem 2rem 0rem 2rem;
+}
+
+.navbar {
+    position: fixed;
+    height: 7rem;
+    width: 100%;
+    top: 0rem;
+    z-index: 1000;
+    overflow: visible;
+    font-family: 'Poppins', 'Sans-serif' !important;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0.9975) 5%,
+            rgba(255, 255, 255, 0.99) 10%,
+            rgba(255, 255, 255, 0.9775) 15%,
+            rgba(255, 255, 255, 0.96) 20%,
+            rgba(255, 255, 255, 0.9375) 25%,
+            rgba(255, 255, 255, 0.91) 30%,
+            rgba(255, 255, 255, 0.8775) 35%,
+            rgba(255, 255, 255, 0.84) 40%,
+            rgba(255, 255, 255, 0.7975) 45%,
+            rgba(255, 255, 255, 0.75) 50%,
+            rgba(255, 255, 255, 0.6975) 55%,
+            rgba(255, 255, 255, 0.64) 60%,
+            rgba(255, 255, 255, 0.5775) 65%,
+            rgba(255, 255, 255, 0.51) 70%,
+            rgba(255, 255, 255, 0.4375) 75%,
+            rgba(255, 255, 255, 0.36) 80%,
+            rgba(255, 255, 255, 0.2775) 85%,
+            rgba(255, 255, 255, 0.19) 90%,
+            rgba(255, 255, 255, 0.0975) 95%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.navbar-brand {
+    position: relative;
+    color: #ff5757;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+    color: #ff5757 !important;
+}
+
+.nav-link.active {
+    color: #FA713E;
+}
+
+.nav-darken:hover {
+    filter: brightness(90%);
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-icon {
+    color: rgb(80, 65, 65);
+    transition: color .5s ease, opacity .5s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-icon:hover,
+.navbar-nav .nav-link:hover .nav-icon {
+    color: #ff5757 !important;
+    text-decoration: none;
+    outline: none;
+}
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item:hover .nav-icon {
+    color: #ff5757 !important;
+}
+
+.navbar-toggler-icon {
+    margin-left: 1rem;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(80, 65, 65)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.offcanvas-header .offcanvas-title {
+    font-weight: bold;
+    color: #ff5757;
+    font-size: 2rem;
+    margin: .5rem 0rem 0rem 1rem;
+}
+
+.offcanvas-body .nav-link {
+    font-weight: normal;
+    color: rgb(80, 65, 65);
+    border-bottom: 1px solid rgb(150, 130, 130);
+    padding: .75rem 1rem;
+}
+
+.offcanvas-body .nav-link:hover {
+    color: #ff5757;
+    text-decoration: none;
+}
