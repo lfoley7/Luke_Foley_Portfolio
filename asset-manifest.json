@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Luke_Foley_Portfolio/static/css/main.131c0c87.css",
+    "main.css": "/Luke_Foley_Portfolio/static/css/main.6c4d6edd.css",
     "main.js": "/Luke_Foley_Portfolio/static/js/main.eeab1ffa.js",
     "static/js/453.92019001.chunk.js": "/Luke_Foley_Portfolio/static/js/453.92019001.chunk.js",
     "static/media/simple_network_background.jpg": "/Luke_Foley_Portfolio/static/media/simple_network_background.f0ff71ebbecc3c380e91.jpg",
     "static/media/alexa.svg": "/Luke_Foley_Portfolio/static/media/alexa.1ad37eacca023c9c078e53fbccc4d0ad.svg",
     "static/media/mathworks.svg": "/Luke_Foley_Portfolio/static/media/mathworks.df91561346cf4dbb3d730aca04649263.svg",
     "index.html": "/Luke_Foley_Portfolio/index.html",
-    "main.131c0c87.css.map": "/Luke_Foley_Portfolio/static/css/main.131c0c87.css.map",
+    "main.6c4d6edd.css.map": "/Luke_Foley_Portfolio/static/css/main.6c4d6edd.css.map",
     "main.eeab1ffa.js.map": "/Luke_Foley_Portfolio/static/js/main.eeab1ffa.js.map",
     "453.92019001.chunk.js.map": "/Luke_Foley_Portfolio/static/js/453.92019001.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.131c0c87.css",
+    "static/css/main.6c4d6edd.css",
     "static/js/main.eeab1ffa.js"
   ]
 }
