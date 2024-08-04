@@ -237,14 +237,28 @@ img {
     margin: auto;
 }
 
+.skills {
+    position: relative;
+    color: #ff5757;
+    font-size: 3.4rem;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 5rem;
+    white-space: nowrap;
+}
+
 @media (max-width: 992px) {
-    .my-projects {
+
+    .my-projects,
+    .skills {
         font-size: 2.8rem;
     }
 }
 
 @media (max-width: 576px) {
-    .my-projects {
+
+    .my-projects,
+    .skills {
         font-size: 2.4rem;
     }
 }
@@ -278,16 +292,6 @@ img {
     justify-content: center;
     margin-left: 10rem;
     margin-right: 10rem;
-}
-
-.skills {
-    position: relative;
-    color: #ff5757;
-    font-size: 3.4rem;
-    font-weight: 600;
-    margin: auto;
-    margin-bottom: 5rem;
-    white-space: nowrap;
 }
 
 .skills-wrapper {
@@ -653,5 +657,23 @@ hr {
     .portfolio-content .text-left,
     .portfolio-content .text-right {
         text-align: left;
+    }
+}
+
+@media (max-width: 1200px) {
+    .background-container {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .background-container {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .background-container {
+        background-size: cover;
     }
 }
