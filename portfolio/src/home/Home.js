@@ -9,7 +9,6 @@ import { Modal, Button, Carousel, Container, Row, Col, Tooltip, OverlayTrigger }
 import scrollama from 'scrollama';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
-import { throttle } from 'lodash';
 
 // FontAwesome Icons
 import { faDatabase, faTools, faEnvelope } from '@fortawesome/free-solid-svg-icons';

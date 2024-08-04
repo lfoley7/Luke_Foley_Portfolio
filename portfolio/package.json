@@ -1,8 +1,11 @@
 {
-  "name": "your-app-name",
+  "name": "luke-foley-portfolio",
   "version": "1.0.0",
   "private": true,
   "homepage": "https://lfoley7.github.io/Luke_Foley_Portfolio",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

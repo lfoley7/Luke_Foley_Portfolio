@@ -15,7 +15,9 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container-fluid">
-                    <a onClick={scrollToTop} className="navbar-brand" style={{ cursor: 'pointer' }}>Luke Foley</a>
+                    <button onClick={scrollToTop} className="navbar-brand" style={{ cursor: 'pointer', background: 'none', border: 'none', padding: 0, fontSize: 'inherit', color: 'inherit' }}>
+                        Luke Foley
+                    </button>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <FontAwesomeIcon icon={faBars} style={{ color: 'rgb(80, 65, 65)' }} />
                     </button>
@@ -40,7 +42,7 @@ function Navbar() {
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <a className="nav-link" href="/Foley%20Luke%20Resume.pdf" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-                                    <FontAwesomeIcon icon={faFile} />&nbsp;Download Resume
+                                    <FontAwesomeIcon className="nav-icon" icon={faFile} />&nbsp;Download Resume
                                 </a>
                             </li>
                         </ul>
@@ -74,7 +76,7 @@ function Navbar() {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <a className="nav-link" href="/Foley%20Luke%20Resume.pdf" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
-                                <FontAwesomeIcon icon={faFile} />&nbsp;Download Resume
+                                <FontAwesomeIcon className="nav-icon" icon={faFile} />&nbsp;Download Resume
                             </a>
                         </li>
                     </ul>
