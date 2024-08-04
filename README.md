@@ -50,7 +50,7 @@ This is my project portfolio website! This portfolio showcases my various projec
 
 ## Contact
 
-- **LinkedIn:** [Luke Foley](https://www.linkedin.com/in/luke-foley-9006ba205/)
+- **LinkedIn:** [Luke Foley](https://www.linkedin.com/in/luke-foley)
 - **GitHub:** [lfoley7](https://github.com/lfoley7)
 - **Email:** [luke.c.foley@gmail.com](mailto:luke.c.foley@gmail.com)
 

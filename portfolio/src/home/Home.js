@@ -83,150 +83,217 @@ const portfolio = [
     {
         name: 'Holios',
         color: 'rgb(1, 14, 89)',
-        image: process.env.PUBLIC_URL + './holios/holios_profile.png',
+        image: `${process.env.PUBLIC_URL}/holios/holios_profile.png`,
         description: 'A portal for connected technology companies to track usage statistics and production log data.',
         fullDescription: 'At Bluefin, I developed the Holios productization which is divided into the production and analytics portals. The production portal allows companies to manage their products and import CSV production logs for comprehensive analyses of their production log statistics. The analytics portal displays different visualizations based on device data and are displayed in intuitive graphs - such as voice commands vs physical commands, usage by day of week, and total devices online by month. You can view visualizations by DSN and compare visualizations across different skus, and use a ChatGPT query tool for custom database queries. Find more info at <a target="_blank" href="https://www.holios.io/">holios.io/</a>. The website is live at <a target="_blank" href="https://app.holios.io/">app.holios.io/</a>, however you need to register an account with Holios to access the entire site.',
-        gallery: [process.env.PUBLIC_URL + './holios/gallery/dashboard.png', process.env.PUBLIC_URL + './holios/gallery/comparisons.png', process.env.PUBLIC_URL + './holios/gallery/prod_line_sum.png', process.env.PUBLIC_URL + './holios/gallery/query_tool.png', process.env.PUBLIC_URL + './holios/gallery/devices.png', process.env.PUBLIC_URL + './holios/gallery/prod_line_sum.png', process.env.PUBLIC_URL + './holios/gallery/company_create.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/holios/gallery/dashboard.png`,
+            `${process.env.PUBLIC_URL}/holios/gallery/comparisons.png`,
+            `${process.env.PUBLIC_URL}/holios/gallery/prod_line_sum.png`,
+            `${process.env.PUBLIC_URL}/holios/gallery/query_tool.png`,
+            `${process.env.PUBLIC_URL}/holios/gallery/devices.png`,
+            `${process.env.PUBLIC_URL}/holios/gallery/prod_line_sum.png`,
+            `${process.env.PUBLIC_URL}/holios/gallery/company_create.png`
+        ],
         link: 'https://holios.io',
         skills: ['React.js', 'Bootstrap', 'Chart.js', 'Sequelize', 'HTML', 'CSS', 'JavaScript', 'pgAdmin', 'S3']
     },
     {
         name: 'FLEXTRACK',
         color: 'rgb(240, 93, 52)',
-        image: process.env.PUBLIC_URL + './flextrack/flextrack_profile.png',
+        image: `${process.env.PUBLIC_URL}/flextrack/flextrack_profile.png`,
         description: 'A comprehensive fitness tracking web application, helping users via fitness progress tracking, fitness challenges, and social features.',
         fullDescription: 'FLEXTRACK is a comprehensive fitness tracking web application created for my team\'s final project for our Database Management Systems class (CS542) at WPI in Spring 2024. This application helps users track their fitness progress, manage their workout plans, participate in fitness challenges, and engage with other fitness enthusiasts. The app features workout tracking, challenges, social posts, customizable profiles, and a user dashboard, using a tech stack that includes React.js, Axios, Bootstrap, TypeScript, Express, and SQLite. Future development plans include full OAuth integration, enhanced metrics, AI-generated recommendations, and expanded mobile support.',
-        gallery: [process.env.PUBLIC_URL + './flextrack/gallery/dashboard.png', process.env.PUBLIC_URL + './flextrack/gallery/welcome.png', process.env.PUBLIC_URL + './flextrack/gallery/ppl.png', process.env.PUBLIC_URL + './flextrack/gallery/checking.png', process.env.PUBLIC_URL + './flextrack/gallery/mockup.png', process.env.PUBLIC_URL + './flextrack/gallery/erd.png',],
+        gallery: [
+            `${process.env.PUBLIC_URL}/flextrack/gallery/dashboard.png`,
+            `${process.env.PUBLIC_URL}/flextrack/gallery/welcome.png`,
+            `${process.env.PUBLIC_URL}/flextrack/gallery/ppl.png`,
+            `${process.env.PUBLIC_URL}/flextrack/gallery/checking.png`,
+            `${process.env.PUBLIC_URL}/flextrack/gallery/mockup.png`,
+            `${process.env.PUBLIC_URL}/flextrack/gallery/erd.png`
+        ],
         link: 'https://github.com/cscopetski/CS542-Project',
         skills: ['React.js', 'SQLite', 'Bootstrap', 'Axios', 'CSS', 'Google Fonts', 'FontAwesome']
     },
     {
         name: 'DVL',
         color: 'rgb(140, 60, 60)',
-        image: process.env.PUBLIC_URL + './dvl/dvl_profile.png',
+        image: `${process.env.PUBLIC_URL}/dvl/dvl_profile.png`,
         description: 'A mobile-first data visualization literacy platform based off of the data visualization literacy test for my major qualifying project.',
         fullDescription: 'The DVL is a Data Visualization Literacy tool created as my group\'s Major Qualifying Project at WPI, advised by Professor Lane Harrison. It addresses the need for accessible data visualization education by creating a mobile application that provides flexible, engaging lessons on common and complex visualizations. The app incorporates interactive modules, gamification, and immediate feedback, and is inspired by platforms like Khan Academy and Duolingo. Optimized for mobile use, it features clear visualizations and intuitive navigation, helping users critically understand and evaluate data. I contributed prominently in the frontend development of the application using React Native, React Native Paper, and TypeScript. The repository can be found at <a target="_blank" href="https://github.com/wpivis/mqp-DataSight">this link</a>, and we also wrote a paper "Building a Platform for Data Visualization Literacy" that can be found at the link below.',
-        gallery: [process.env.PUBLIC_URL + './dvl/gallery/dashboard.png', process.env.PUBLIC_URL + './dvl/gallery/lesson.png', process.env.PUBLIC_URL + './dvl/gallery/structure.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/dvl/gallery/dashboard.png`,
+            `${process.env.PUBLIC_URL}/dvl/gallery/lesson.png`,
+            `${process.env.PUBLIC_URL}/dvl/gallery/structure.png`
+        ],
         link: 'https://digitalwpi.wpi.edu/concern/student_works/tb09j979j?locale=en',
         skills: ['React Native', 'TypeScript', 'CSS', 'D3.js', 'MaterialUI']
     },
     {
         name: 'Sentizard',
         color: 'rgb(0, 172, 238)',
-        image: process.env.PUBLIC_URL + './sentizard/sentizard_profile.png',
+        image: `${process.env.PUBLIC_URL}/sentizard/sentizard_profile.png`,
         description: 'A sentiment analysis wizard built off of twitter data, utilizing multiple machine learning models and comparing their accuracy.',
         fullDescription: 'The Sentizard website allows the user to enter a prompt in the entry box and dynamically analyze the phrase and display results interactively. My team\'s models were trained and tested on a dataset of 1.6 million tweets from Kaggle, which was pre-processed by converting all characters to lowercase, removing stop words, and replacing URLs and usernames with placeholders. We used Word2Vec to vectorize the tweets, enabling the SVM to classify data by finding the best dividing hyperplane. PCA was utilized to visualize the SVM\'s decision boundary by reducing the dataset\'s dimensions. For more advanced analysis, we employed LSTM networks to handle long-term dependencies and C-LSTM models to combine the strengths of CNNs and LSTMs. I connected the frontend and backend of the project using Flask to interface between our HTML and Python code.',
-        gallery: [process.env.PUBLIC_URL + './sentizard/gallery/model.png', process.env.PUBLIC_URL + './sentizard/gallery/accuracy.png', process.env.PUBLIC_URL + './sentizard/gallery/results.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/sentizard/gallery/model.png`,
+            `${process.env.PUBLIC_URL}/sentizard/gallery/accuracy.png`,
+            `${process.env.PUBLIC_URL}/sentizard/gallery/results.png`
+        ],
         link: 'https://sentizard.s3.amazonaws.com/Sentizard_Website.html#',
         skills: ['Javascript', 'Chart.js', 'HTML', 'Python', 'Numpy', 'Flask']
     },
     {
         name: 'Râșnov Creativ',
         color: 'rgb(144, 105, 173)',
-        image: process.env.PUBLIC_URL + './rasnov_creativ/rasnov_creativ_profile.webp',
+        image: `${process.env.PUBLIC_URL}/rasnov_creativ/rasnov_creativ_profile.webp`,
         description: 'A website for the Râșnov Creativ directiv in Râșnov, Romania, highlighting local artisans and their creations and helping them to build a community.',
         fullDescription: 'For my International Qualifying Project (IQP) at WPI, my team worked with the Mioritics Association in Rasnov, Romania to create the website for the Rasnov Creativ project. The goal of Rasnov Creativ is to create a community of artisans to network and grow their crafts together. While staying in the nation\'s capital of Bucharest, we analyzed the needs of the local producers and the wants of consumers through data collection via surveys and in-person interviews. We created our final website using WordPress and Tailwind CSS, which can be found at <a target="_blank" href="https://www.rasnovcreativ.ro">rasnovcreativ.ro</a>. Our final written report on the experience can be found at <a target="_blank" href="https://digital.wpi.edu/concern/student_works/z316q500r?locale=en">digital.wpi.edu/concern/student_works/z316q500r?locale=en</a>',
-        gallery: [process.env.PUBLIC_URL + './rasnov_creativ/gallery/showcase.jpg', process.env.PUBLIC_URL + './rasnov_creativ/gallery/dashboard.png', process.env.PUBLIC_URL + './rasnov_creativ/gallery/explanation.png', process.env.PUBLIC_URL + './rasnov_creativ/gallery/rasnov.jpeg'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/rasnov_creativ/gallery/showcase.jpg`,
+            `${process.env.PUBLIC_URL}/rasnov_creativ/gallery/dashboard.png`,
+            `${process.env.PUBLIC_URL}/rasnov_creativ/gallery/explanation.png`,
+            `${process.env.PUBLIC_URL}/rasnov_creativ/gallery/rasnov.jpeg`
+        ],
         link: 'https://rasnovcreativ.ro/',
         skills: ['WordPress', 'Figma', 'Tailwind']
     },
     {
         name: 'Lucidum Alexa Skill',
         color: 'rgb(30, 0, 15)',
-        image: process.env.PUBLIC_URL + './lucidum/lucidum_profile.png',
+        image: `${process.env.PUBLIC_URL}/lucidum/lucidum_profile.png`,
         description: 'An Alexa Skill for Lucidum cybersecurity that queries their database to inform the user about network vulnerabilities.',
         fullDescription: 'As an employee at Bluefin Technology Partners, I was contracted by Lucidum to create an Alexa Skill for their service. Lucidum integrates their software into their clients\' existing platforms to expose network and cybersecurity vulnerabilities. My job was to create an Alexa application that would dynamically query their database to retrieve user statistics and report it via Alexa voice. I delivered a product that fulfilled Lucidum\'s specifications, and the skill is now being used by Lucidum\'s marketing team.',
-        gallery: [process.env.PUBLIC_URL + './lucidum/gallery/lucidum.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/lucidum/gallery/lucidum.png`
+        ],
         link: null,
         skills: ['Alexa Dev Cons.', 'RESTful APIs', 'Python', 'Alexa Skills Kit']
     },
     {
         name: 'Global Military Spending',
         color: 'rgb(42, 69, 49)',
-        image: process.env.PUBLIC_URL + './military_spending/military_spending_profile.png',
+        image: `${process.env.PUBLIC_URL}/military_spending/military_spending_profile.png`,
         description: 'A webpage with a timespan of 60 years that displays major world conflicts and events and how they affected military spending in log base 10.',
         fullDescription: 'The Global Military Spending Timeline enables users to interact with military spending data trends for specific countries during significant global events. We use interactive visualizations and Timeline.js to allow users to explore events from 1960 to 2022 and their impacts on military expenditures. Users can navigate through the timeline and view a dynamically updated graph that displays military spending trends before, during, and after these events. Our evaluation showed that the tool effectively highlights reactive spending trends and differences between countries by displaying data in log_10.',
-        gallery: [process.env.PUBLIC_URL + './military_spending/gallery/everything.png', process.env.PUBLIC_URL + './military_spending/gallery/oil.png', process.env.PUBLIC_URL + './military_spending/gallery/collapse.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/military_spending/gallery/everything.png`,
+            `${process.env.PUBLIC_URL}/military_spending/gallery/oil.png`,
+            `${process.env.PUBLIC_URL}/military_spending/gallery/collapse.png`
+        ],
         link: 'https://lfoley7.github.io/Surprise_Map_Scrollytelling_World_Data/',
         skills: ['D3.js', 'Timeline.js', 'JavaScript', 'HTML', 'CSS', 'Python']
     },
     {
         name: 'MediStore',
         color: 'rgb(204, 17, 20)',
-        image: process.env.PUBLIC_URL + './medistore/medistore_profile.png',
+        image: `${process.env.PUBLIC_URL}/medistore/medistore_profile.png`,
         description: 'A web interface for a medication storage system that retrieves objects and alerts the user when their medication is low.',
         fullDescription: 'MediStore is a project created by the Beta Theta Pi team at WPI 2024 GoatHacks Hackathon. The invention is a 3D-modeled medicine cabinet, that automatically retrieves a user\'s medication from the cabinet via a web interface. I was responsible for the creation of the website and much of the CAD modeling. The website features a dashboard for users to monitor their medications, a "medications" page for users to monitor whether they need a refill and when to take their medication, and an analytics page for doctors to monitor their patients\' progress. Our project won an honorable mention at the GoatHacks competition, and I won enough Celsius Energy drinks to give me a temporary caffeine addiction.',
-        gallery: [process.env.PUBLIC_URL + './medistore/gallery/dashboard.png', process.env.PUBLIC_URL + './medistore/gallery/medication.png', process.env.PUBLIC_URL + './medistore/gallery/analytics.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/medistore/gallery/dashboard.png`,
+            `${process.env.PUBLIC_URL}/medistore/gallery/medication.png`,
+            `${process.env.PUBLIC_URL}/medistore/gallery/analytics.png`
+        ],
         link: 'https://github.com/lfoley7/MediStore',
         skills: ['React', 'AWS Lambda', 'MySQL', 'SolidWorks', 'Chart.js', 'Bootstrap', 'HTML', 'CSS']
     },
     {
         name: 'MyGymBuddy',
         color: 'rgb(55, 0, 179)',
-        image: process.env.PUBLIC_URL + './mygymbuddy/mygymbuddy_profile.png',
+        image: `${process.env.PUBLIC_URL}/mygymbuddy/mygymbuddy_profile.png`,
         description: 'A Kotlin application that analyzes a user\'s form using Android MLKit for the "Big Four" lifts and other popular exercises.',
         fullDescription: 'MyGymBuddy is an Android app designed to help athletes improve their form at the gym. It uses the camera to track users\' movements and provide feedback to improve their form. The accelerometer assists the user in placing the phone in the correct location for best camera tracking. It features a log of all workouts performed, and a graph showing progress through reps over time, as well as a rep counter that only counts reps of exercises when the form is not considered unsafe. This app was built in a team of 5 using Android ML Kit and Android Studio.',
-        gallery: [process.env.PUBLIC_URL + './mygymbuddy/gallery/position.png', process.env.PUBLIC_URL + './mygymbuddy/gallery/screens.png', process.env.PUBLIC_URL + './mygymbuddy/gallery/sidenav.png', process.env.PUBLIC_URL + './mygymbuddy/gallery/joints.jpg'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/mygymbuddy/gallery/position.png`,
+            `${process.env.PUBLIC_URL}/mygymbuddy/gallery/screens.png`,
+            `${process.env.PUBLIC_URL}/mygymbuddy/gallery/sidenav.png`,
+            `${process.env.PUBLIC_URL}/mygymbuddy/gallery/joints.jpg`
+        ],
         link: 'https://github.com/Mark-Renzi/ubicomp-final',
         skills: ['Kotlin', 'Android Studio', 'Gradle', 'XML']
     },
     {
         name: 'Sharpify',
         color: 'rgb(57, 78, 97)',
-        image: process.env.PUBLIC_URL + './sharpify/sharpify_profile.png',
+        image: `${process.env.PUBLIC_URL}/sharpify/sharpify_profile.png`,
         description: 'An image sharpening tool that takes an image and uses API calls to "sharpify" the image, which is stored in a databade for the user to retrieve later.',
         fullDescription: 'Sharpify is a React application that was built as my team\'s final project for CS4731 Webware. The web app acts as an interface for an image sharpening API. Users can log in to their saved accounts and sharpen their images, as well as view their past sharpened images, which are retrieved from a firebase database. ',
-        gallery: [process.env.PUBLIC_URL + './sharpify/gallery/login.png', process.env.PUBLIC_URL + './sharpify/gallery/sharpify.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/sharpify/gallery/login.png`,
+            `${process.env.PUBLIC_URL}/sharpify/gallery/sharpify.png`
+        ],
         link: 'https://github.com/dovushman/cs4241-final-project',
         skills: ['React', 'RESTful APIs', 'Bootstrap', "JavaScript", "HTML", "CSS"]
     },
     {
         name: 'Wharfside Alexa Skill',
         color: 'rgb(28, 92, 114)',
-        image: process.env.PUBLIC_URL + './wharfside/wharfside_profile.png',
+        image: `${process.env.PUBLIC_URL}/wharfside/wharfside_profile.png`,
         description: 'An Alexa Skill for Wharfside Watersports of the British Virgin Islands that informs users about rental options, prices, location, and general company info.',
         fullDescription: 'As my first project at Bluefin, I created an Alexa app for Wharfside Watersports of the US Virgin Islands. The app gives users info on the company\'s rentals, location, and FAQs. We also made a spin-off skill that quizzes users on company info. Both skills utilize Alexa APL to create dynamic user interfaces and utilize sound effects. Both skills are published to the Alexa Skill Store.',
-        gallery: [process.env.PUBLIC_URL + './wharfside/wharfside_profile.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/wharfside/wharfside_profile.png`
+        ],
         link: 'https://www.amazon.com/Bluefin-Technology-Partners-Island-Watersports/dp/B0B63SX65Q/ref=sr_1_1?crid=39NZQCTVD0Q8V&dib=eyJ2IjoiMSJ9.t34SrNtlGaDeNf8G20d9_A.YFN5DsJJvzr9LTlnyGFhXWBUnmMETaQvK_xyt6S-_KM&dib_tag=se&keywords=island+watersports&qid=1721701885&s=digital-skills&sprefix=island+watersport%2Calexa-skills%2C105&sr=1-1',
         skills: ['Alexa Devloper Console', 'Alexa Skills Kit', 'APL', 'JavaScript', 'RESTful APIs']
     },
     {
         name: 'Beta Theta Pies',
         color: 'rgb(1, 14, 89)',
-        image: process.env.PUBLIC_URL + './beta_theta_pies/beta_theta_pies_profile.png',
+        image: `${process.env.PUBLIC_URL}/beta_theta_pies/beta_theta_pies_profile.png`,
         description: 'A website for Beta Theta Pi\'s annual pizza philanthropy, allowing users to customize and submit their orders, and the fraternity to manage pizzas.',
         fullDescription: 'Beta Theta Pies is an annual philanthropy run by my fraternity where we sell pizza pies for donations to ACE Worcester. I created a website from my fraternity to use to collect orders. Users can fill their information into the form and use the custom pizza tool to add toppings. Users can also view all pizza orders and the details about the order.',
-        gallery: [process.env.PUBLIC_URL + './beta_theta_pies/gallery/dashboard.png', process.env.PUBLIC_URL + './beta_theta_pies/gallery/maker.png', process.env.PUBLIC_URL + './beta_theta_pies/gallery/orders.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/beta_theta_pies/gallery/dashboard.png`,
+            `${process.env.PUBLIC_URL}/beta_theta_pies/gallery/maker.png`,
+            `${process.env.PUBLIC_URL}/beta_theta_pies/gallery/orders.png`
+        ],
         link: 'https://a2-lukefoley.glitch.me/all_orders.html',
         skills: ['JavaScript', 'HTML', 'CSS', 'SQL', 'Bootstrap']
     },
     {
         name: 'Conway\'s Game of Life',
         color: 'rgb(137, 164, 191)',
-        image: process.env.PUBLIC_URL + './conway/conway_profile.png',
+        image: `${process.env.PUBLIC_URL}/conway/conway_profile.png`,
         description: 'An implementation of Conway\'s Game of Life, with dynamic resizing of the board, color selectiong, and tick speed customization.',
         fullDescription: 'This is a recreation of John Conway\'s Game of life. It uses dynamic inputs to recolor and resize the board, as well as manipulate the tick speed of the game. Users can input their own patterns and start the game to watch the algorithm work!',
-        gallery: [process.env.PUBLIC_URL + './conway/gallery/pattern.png'],
+        gallery: [
+            `${process.env.PUBLIC_URL}/conway/gallery/pattern.png`
+        ],
         link: 'https://a4-lukefoley.glitch.me/',
         skills: ['JavaScript', 'HTML', 'CSS']
     },
     {
         name: 'Theatre Carpentry',
         color: 'rgb(87, 38, 20)',
-        image: process.env.PUBLIC_URL + './carpentry/carpentry_profile.jpg',
+        image: `${process.env.PUBLIC_URL}/carpentry/carpentry_profile.jpg`,
         description: 'I lead multiple carpentry projects as a theatre carpenter for the WPI theatre clubs and as an employee and TA for Scenic Design 420X in the Alden Hall woodshop.',
         fullDescription: 'Over my 4 years at WPI, I was very active in theatre carpentry in multiple organizations. I was responsible for the set design, lumber ordering, and set construction while in charge of large carpentry teams, while working on shows such as Dogfight, Urinetown, and Bonnie and Clyde. I also helped the Theatre department by being the Teacher\'s Assistant for TH3510 Scenic Design and Fabrication, ensuring that tools were used in a safe manner and assisting the class in constructing the set. I eventually was employed by the department\'s student team "Squad" to facilitate productions. I also has the honor of being inducted into the Alpha Psi Omega Theatre Honors fraternity.',
-        gallery: [process.env.PUBLIC_URL + './carpentry/gallery/dogfight.jpg', process.env.PUBLIC_URL + './carpentry/gallery/urinetown.jpg', process.env.PUBLIC_URL + './carpentry/gallery/cabaret.jpg', process.env.PUBLIC_URL + './carpentry/gallery/sense.jpg', process.env.PUBLIC_URL + './carpentry/gallery/ppt.jpg', process.env.PUBLIC_URL + './carpentry/gallery/squad.jpeg',],
+        gallery: [
+            `${process.env.PUBLIC_URL}/carpentry/gallery/dogfight.jpg`,
+            `${process.env.PUBLIC_URL}/carpentry/gallery/urinetown.jpg`,
+            `${process.env.PUBLIC_URL}/carpentry/gallery/cabaret.jpg`,
+            `${process.env.PUBLIC_URL}/carpentry/gallery/sense.jpg`,
+            `${process.env.PUBLIC_URL}/carpentry/gallery/ppt.jpg`,
+            `${process.env.PUBLIC_URL}/carpentry/gallery/squad.jpeg`
+        ],
         link: null,
         skills: ['SolidWorks']
     },
     {
         name: 'Beta Programming Chair',
         color: 'rgb(0, 47, 108)',
-        image: process.env.PUBLIC_URL + './prog/prog_profile.jpg',
+        image: `${process.env.PUBLIC_URL}/prog/prog_profile.jpg`,
         description: 'My achievements as Beta\'s Programming Chairman, raising almost $4000 for philanthropy and growing Beta as a social organization.',
         fullDescription: 'As Beta\'s Programming Chairman for a year and a half, I made many achievements for my fraternity. I ran our quarterly philanthropies, such as Beta Theta Fries, Beta Theta Pies, and Beta Clue to raise almost $4000 for African Community Education Worcester. I also ran two formals, being in charge of transportation, food and drinks, invitations, and the venue. I also ran our socials with other organizations and interfaced with the broader campus community. In addition, I ran our community service events, where we cleaned beaches, the streets of Worcester, traveled to soup kitchens, and completed projects for the Worcester YMCA.',
-        gallery: [process.env.PUBLIC_URL + './prog/gallery/initiation.jpg', process.env.PUBLIC_URL + './prog/gallery/group.jpg', process.env.PUBLIC_URL + './prog/gallery/misha.jpg', process.env.PUBLIC_URL + './prog/gallery/fries.jpg', process.env.PUBLIC_URL + './prog/gallery/malibu.jpg',],
+        gallery: [
+            `${process.env.PUBLIC_URL}/prog/gallery/initiation.jpg`,
+            `${process.env.PUBLIC_URL}/prog/gallery/group.jpg`,
+            `${process.env.PUBLIC_URL}/prog/gallery/misha.jpg`,
+            `${process.env.PUBLIC_URL}/prog/gallery/fries.jpg`,
+            `${process.env.PUBLIC_URL}/prog/gallery/malibu.jpg`
+        ],
         link: null,
         skills: ['']
     }
@@ -234,10 +301,6 @@ const portfolio = [
 
 // Home component containing the main content of the homepage
 function Home() {
-    useEffect(() => {
-        console.log('Home component rendered');
-    }, []);
-
     const [modalShow, setModalShow] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
 
@@ -260,53 +323,43 @@ function Home() {
             scroller.resize();
         };
 
-        let ticking = false;
-
         // Function to handle window scroll event
         const handleScroll = () => {
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-                    const intro = document.querySelector('.intro');
-                    const projectsWrapper = document.querySelector('.projects-wrapper');
-                    const skillsWrapper = document.querySelector('.skills-wrapper');
+            const intro = document.querySelector('.intro');
+            const projectsWrapper = document.querySelector('.projects-wrapper');
+            const skillsWrapper = document.querySelector('.skills-wrapper');
 
-                    if (intro) {
-                        const introHeight = intro.offsetHeight;
-                        const introScrollFraction = scrollTop / introHeight;
-                        const introBackgroundPositionY = introScrollFraction * 50;
-                        intro.style.backgroundPositionY = `${introBackgroundPositionY}%`;
-                    }
+            if (intro) {
+                const introHeight = intro.offsetHeight;
+                const introScrollFraction = scrollTop / introHeight;
+                const introBackgroundPositionY = introScrollFraction * 50;
+                intro.style.backgroundPositionY = `${introBackgroundPositionY}%`;
+            }
 
-                    if (projectsWrapper) {
-                        const projectsWrapperRect = projectsWrapper.getBoundingClientRect();
-                        const projectsWrapperHeight = projectsWrapper.offsetHeight;
-                        const startParallax = projectsWrapperRect.top + scrollTop - window.innerHeight;
-                        const endParallax = projectsWrapperRect.top + scrollTop + projectsWrapperHeight;
-                        if (scrollTop >= startParallax && scrollTop <= endParallax) {
-                            const scrollFraction = (scrollTop - startParallax) / (endParallax - startParallax);
-                            const backgroundPositionY = scrollFraction * 100;
-                            projectsWrapper.style.backgroundPositionY = `${backgroundPositionY}%`;
-                        }
-                    }
+            if (projectsWrapper) {
+                const projectsWrapperRect = projectsWrapper.getBoundingClientRect();
+                const projectsWrapperHeight = projectsWrapper.offsetHeight;
+                const startParallax = projectsWrapperRect.top + scrollTop - window.innerHeight;
+                const endParallax = projectsWrapperRect.top + scrollTop + projectsWrapperHeight;
+                if (scrollTop >= startParallax && scrollTop <= endParallax) {
+                    const scrollFraction = (scrollTop - startParallax) / (endParallax - startParallax);
+                    const backgroundPositionY = scrollFraction * 100;
+                    projectsWrapper.style.backgroundPositionY = `${backgroundPositionY}%`;
+                }
+            }
 
-                    if (skillsWrapper) {
-                        const skillsWrapperRect = skillsWrapper.getBoundingClientRect();
-                        const skillsWrapperHeight = skillsWrapper.offsetHeight;
-                        const startParallax = skillsWrapperRect.top + scrollTop - window.innerHeight;
-                        const endParallax = skillsWrapperRect.top + scrollTop + skillsWrapperHeight;
-                        if (scrollTop >= startParallax && scrollTop <= endParallax) {
-                            const scrollFraction = (scrollTop - startParallax) / (endParallax - startParallax);
-                            const backgroundPositionY = scrollFraction * 100;
-                            skillsWrapper.style.backgroundPositionY = `${backgroundPositionY}%`;
-                        }
-                    }
-
-                    ticking = false;
-                });
-
-                ticking = true;
+            if (skillsWrapper) {
+                const skillsWrapperRect = skillsWrapper.getBoundingClientRect();
+                const skillsWrapperHeight = skillsWrapper.offsetHeight;
+                const startParallax = skillsWrapperRect.top + scrollTop - window.innerHeight;
+                const endParallax = skillsWrapperRect.top + scrollTop + skillsWrapperHeight;
+                if (scrollTop >= startParallax && scrollTop <= endParallax) {
+                    const scrollFraction = (scrollTop - startParallax) / (endParallax - startParallax);
+                    const backgroundPositionY = scrollFraction * 100;
+                    skillsWrapper.style.backgroundPositionY = `${backgroundPositionY}%`;
+                }
             }
         };
 
@@ -375,7 +428,7 @@ function Home() {
     return (
         <div className="display-container">
             <div className="intro">
-                <img src="/Luke.png" alt="Luke" className="intro-image" />
+                <img src={`${process.env.PUBLIC_URL}/Luke.png`} alt="Luke" className="intro-image" />
                 <div className="intro-text">
                     <h1 style={{ marginBottom: "1rem" }}>Hi, I'm <b className="red-text">Luke Foley</b></h1>
                     <p>I'm a <b className="red-text">full-stack developer</b> with Bachelor's and Master's degrees in Computer Science from <b className="red-text">WPI</b></p>
@@ -449,7 +502,7 @@ function Home() {
                     </Row>
                     <Row className="text-center" style={{ color: 'rgb(80, 65, 65)' }}>
                         <Col>
-                            <a href="https://www.linkedin.com/in/luke-foley-9006ba205/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/luke-foley" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} size="2x" className="footer-icon" />
                             </a>
                             &nbsp;
@@ -457,7 +510,7 @@ function Home() {
                                 <FontAwesomeIcon icon={faGithub} size="2x" className="footer-icon" />
                             </a>
                             &nbsp;
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lcfoley@wpi.edu" target="_blank" rel="noopener noreferrer">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luke.c.foley@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faEnvelope} size="2x" className="footer-icon" />
                             </a>
                         </Col>

@@ -24,7 +24,7 @@ function Navbar() {
                     <div className="collapse navbar-collapse d-none d-lg-block" id="navbarNavDropdown">
                         <ul className="navbar-nav me-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="https://www.linkedin.com/in/luke-foley-9006ba205/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                                <a className="nav-link" href="https://www.linkedin.com/in/luke-foley" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                     <FontAwesomeIcon className="nav-icon" icon={faLinkedin} />&nbsp;LinkedIn
                                 </a>
                             </li>
@@ -58,7 +58,7 @@ function Navbar() {
                 <div className="offcanvas-body">
                     <ul className="navbar-nav me-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="https://www.linkedin.com/in/luke-foley-9006ba205/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
+                            <a className="nav-link" href="https://www.linkedin.com/in/luke-foley" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>
                                 <FontAwesomeIcon className="nav-icon" icon={faLinkedin} />&nbsp;LinkedIn
                             </a>
                         </li>
